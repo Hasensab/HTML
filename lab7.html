@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>New Form Elements</title>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            background-color: steelblue;
+            
+        }
+        .required::after {
+        content: ' *';
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Candidate Information</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="" class="required">Name.</label></td>
+                <td><input type="text" name="" id="" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Password.</label></td>
+                <td><input type="password" name="" id="" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Phone number.</label></td>
+                <td><input type="number" name="" id="" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Gender</label></td>
+                <td><input type="radio" name="" id="">M
+                    <input type="radio" name="" id="">F</td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Date Of Birth.</label></td>
+                <td><input type="date" name="" id="" ></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Email.</label></td>
+                <td><input type="email" name="" id="" ></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Highest Qualification.</label></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">B-Tech</option>
+                        <option value="">BA</option>
+                        <option value="">MBA</option>
+                        <option value="">BCA</option>
+                        <option value="">OTHER</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>comments:(Mention External certifications if any)</td>
+                <td><textarea name="" id="" cols="20" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="" class="required">Upload Degree/External Certificates.</label></td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Submit Information">
+                    <input type="button" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+        <h4 style="color:red">All fields marked(*) are mandatory</h4>
+    </form>
+    <h2>Figure:Candidate Details</h2>
+</center>
+</body>
+</html>
